@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./styles2.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__heading">body mass index calculator</h1>
+    </header>
+    <main class="main container">
+      <form class="form"  id="form" onsubmit="return validateForm()">
+        <table class="form__table">
+          <tr>
+            <td>Height in CM:</td>
+            <td>
+              <input type="number" id="height" /><br />
+              <span id="height_error"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>Weight in KG:</td>
+            <td>
+              <input type="number" id="weight" /><br /><span
+                id="weight_error"
+              ></span>
+            </td>
+          </tr>
+          <tr>
+            <td>Age:</td>
+            <td>
+              <input type="number" id="age" />
+            </td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <label>
+                <input type="radio" name="gender" id="m" />
+                Male
+              </label>
+              <label>
+                <input type="radio" name="gender" id="f"/>
+                Female
+              </label>
+            </td>
+          </tr>
+        </table>
+        <div class="form__buttons">
+          <button type="button" id="submit">Calculate</button>
+        </div>
+      </form>
+      <blockquote class="result" ></blockquote>
+      <button id="history-btn" onclick="toggleHistory()" >Show History</button>
+
+      <div class="bmi-history">
+        
+      </div>
+    </main>
+    <hr />
+
+  </body>
+</html>

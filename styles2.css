@@ -1,0 +1,113 @@
+:root {
+  font-size: 1rem;
+  box-sizing: border-box;
+  --clr-primary: #ade8f4;
+  --clr-on-primary: #0077b6;
+  --clr-secondary: #00b4d8;
+  --clr-on-secondary: #03045e;
+  --clr-neutral: #03045e;
+  --clr-error: rgb(230, 58, 24);
+  --container: 1920px;
+  --spacing: 2rem;
+}
+blockquote{
+  text-align: center;
+  margin-top: 2rem;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-weight: normal;
+  font-style: normal;
+  border: 0;
+  background-color: initial;
+}
+
+body {
+  background-color: var(--clr-primary);
+}
+h1,
+h2 {
+  text-align: center;
+}
+input {
+  outline: none;
+  border: 1px solid var(--clr-neutral);
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+button {
+  background-color: var(--clr-primary);
+  font-size: 0.9rem;
+  padding: 0.3em 0.7em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  width: min(100% - var(--spacing), var(--container));
+  margin: auto;
+}
+.bmi-history {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.bmi-history-table {
+  margin: auto;
+}
+#history-btn {
+  margin: auto;
+  text-align: center;
+  display: block;
+  margin-top: 1rem;
+}
+td,
+th {
+  min-width: 50px;
+  text-align: left;
+}
+.header {
+  padding: var(--spacing);
+  border-bottom: 2px solid var(--clr-neutral);
+}
+.header__heading {
+  font-size: 2rem;
+  line-height: normal;
+  color: var(--clr-on-primary);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.main {
+  padding: var(--spacing);
+}
+
+.form {
+  background-color: var(--clr-secondary);
+  color: var(--clr-on-secondary);
+  font-size: 0.9rem;
+  margin: auto;
+  max-width: 20rem;
+  padding: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+}
+.form__table {
+  border-spacing: 0.7rem;
+  text-align: left;
+}
+.form__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.form__result {
+  font-size: 0.9rem;
+  font-weight: bold;
+} /*# sourceMappingURL=styles2.css.map */
