@@ -72,6 +72,18 @@ th {
   min-width: 50px;
   text-align: left;
 }
+td,
+ th {
+  min-width: 50px;
+  text-align: left;
+}
+.form
+tr{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .header {
   padding: var(--spacing);
   border-bottom: 2px solid var(--clr-neutral);
